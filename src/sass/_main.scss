@@ -1,0 +1,9 @@
+@use "./variables/_variables.scss";
+@use "./typography/_typography.scss";
+
+@use "./components/_app.scss";
+@use "./components/_header.scss";
+@use "./components/_user.scss";
+@use "./components/_search.scss";
+
+@use "./_resets.scss";

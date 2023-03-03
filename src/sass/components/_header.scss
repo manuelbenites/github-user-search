@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+
+  .header--page {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .header__theme {
+    display: flex;
+    align-items: center;
+
+    .header__theme--label {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      margin-right: 16px;
+      color: var(--light-steel-blue);
+    }
+    .header__theme--button {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  }
+}

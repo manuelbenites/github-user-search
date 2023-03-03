@@ -1,0 +1,122 @@
+.user {
+	padding-top: 32px;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 24px;
+	background-color: var(--light-snow-white);
+	border-radius: 15px;
+	box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+
+	.user__header {
+		display: flex;
+		margin-bottom: 33px;
+
+		.user__header--avatar {
+			height: 70px;
+			width: 70px;
+			border-radius: 50px;
+			margin-right: 19px;
+
+			@media screen and (min-width: 600px) {
+				height: 117px;
+				width: 117px;
+			}
+		}
+
+		.user__header__col {
+			.user__header--username {
+				font-weight: 700;
+				font-size: 16px;
+
+				@media screen and (min-width: 600px) {
+					font-size: 26px;
+				}
+			}
+			.user__header--link {
+				font-size: 13px;
+				color: var(--dodger-blue);
+				margin-bottom: 6px;
+
+				@media screen and (min-width: 600px) {
+					font-size: 16px;
+				}
+			}
+			.user__header--admissiondate {
+				font-size: 13px;
+				color: var(--light-slate-grey);
+
+				@media screen and (min-width: 600px) {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	.user--description {
+		font-size: 13px;
+		line-height: 25px;
+		color: var(--light-slate-grey);
+		margin-bottom: 23px;
+
+		@media screen and (min-width: 600px) {
+			font-size: 15px;
+		}
+	}
+
+	.user__info {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 18px;
+		padding-bottom: 40px;
+		padding-right: 14px;
+		padding-left: 15px;
+
+		.user__info__col {
+			text-align: center;
+			width: 89px;
+
+			.user__info--label {
+				font-size: 11px;
+				font-weight: 400;
+				color: var(--light-slate-grey);
+				margin-bottom: 8px;
+
+				@media screen and (min-width: 600px) {
+					font-size: 13px;
+				}
+			}
+			.user__info--datanumber {
+				font-size: 16px;
+				font-weight: 700;
+
+				@media screen and (min-width: 600px) {
+					font-size: 22px;
+				}
+			}
+
+			@media screen and (min-width: 600px) {
+				text-align: left;
+			}
+		}
+	}
+	.user__links {
+		display: grid;
+		grid-template-columns: 1fr;
+		.user__links__row {
+			display: grid;
+			grid-template-columns: 1fr 7fr;
+			margin-bottom: 17px;
+			overflow: hidden;
+			.user--link {
+				font-size: 13px;
+				color: var(--light-slate-grey);
+				@media screen and (min-width: 600px) {
+					font-size: 15px;
+				}
+			}
+		}
+		@media screen and (min-width: 600px) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
