@@ -3,9 +3,7 @@
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-bottom: 24px;
-	background-color: var(--light-snow-white);
 	border-radius: 15px;
-	box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
 
 	.user__header {
 		display: flex;
@@ -34,7 +32,7 @@
 			}
 			.user__header--link {
 				font-size: 13px;
-				color: var(--dodger-blue);
+				color: var(--bg-button);
 				margin-bottom: 6px;
 
 				@media screen and (min-width: 600px) {
@@ -43,7 +41,6 @@
 			}
 			.user__header--admissiondate {
 				font-size: 13px;
-				color: var(--light-slate-grey);
 
 				@media screen and (min-width: 600px) {
 					font-size: 15px;
@@ -55,7 +52,6 @@
 	.user--description {
 		font-size: 13px;
 		line-height: 25px;
-		color: var(--light-slate-grey);
 		margin-bottom: 23px;
 
 		@media screen and (min-width: 600px) {
@@ -67,9 +63,11 @@
 		display: flex;
 		justify-content: space-around;
 		padding-top: 18px;
-		padding-bottom: 40px;
+		padding-bottom: 19px;
 		padding-right: 14px;
 		padding-left: 15px;
+		border-radius: 10px;
+		margin-bottom: 30px;
 
 		.user__info__col {
 			text-align: center;
@@ -78,7 +76,6 @@
 			.user__info--label {
 				font-size: 11px;
 				font-weight: 400;
-				color: var(--light-slate-grey);
 				margin-bottom: 8px;
 
 				@media screen and (min-width: 600px) {
@@ -107,9 +104,12 @@
 			grid-template-columns: 1fr 7fr;
 			margin-bottom: 17px;
 			overflow: hidden;
+			.user__links--icon {
+				color: white;
+			}
 			.user--link {
 				font-size: 13px;
-				color: var(--light-slate-grey);
+				text-decoration-line: none;
 				@media screen and (min-width: 600px) {
 					font-size: 15px;
 				}

@@ -1,5 +1,5 @@
-export const getUserData = (user) => {
-	return fetch(`https://api.github.com/users/${user}`).then((data) =>
+export const getUserData = ({ userToFind }) => {
+	return fetch(`https://api.github.com/users/${userToFind}`).then((data) =>
 		data.json()
 	)
 }

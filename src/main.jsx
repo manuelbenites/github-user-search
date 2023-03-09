@@ -1,10 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./sass/_main.scss";
+import React from "react"
+import ReactDOM from "react-dom/client"
+import App from "./App"
+import { ThemeContextProvider } from "./context/ThemeContext.jsx"
+import "./sass/_main.scss"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+	<React.StrictMode>
+		<ThemeContextProvider>
+			<App />
+		</ThemeContextProvider>
+	</React.StrictMode>
+)
