@@ -20,9 +20,13 @@ function Header() {
 				</div>
 				<div>
 					{theme == "light" ? (
-						<img className="header__theme--icon" src={IconMoon} />
+						<img
+							className="header__theme--icon"
+							src={IconMoon}
+							alt="moon icon"
+						/>
 					) : (
-						<img className="header__theme--icon" src={IconSun} />
+						<img className="header__theme--icon" src={IconSun} alt="sun icon" />
 					)}
 				</div>
 			</button>

@@ -20,7 +20,11 @@ function User({ userResult }) {
 					className={"user " + "bg-component-" + theme + " bg-shadow-" + theme}
 				>
 					<div className="user__header">
-						<img src={userResult.avatar_url} className="user__header--avatar" />
+						<img
+							src={userResult.avatar_url}
+							className="user__header--avatar"
+							alt="avatar img"
+						/>
 						<div className="user__header__col">
 							<div className={"user__header--username " + "text-bold-" + theme}>
 								{userResult.name}
@@ -32,8 +36,7 @@ function User({ userResult }) {
 						</div>
 					</div>
 					<div className={"user--description " + "text-" + theme}>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-						odio. Quisque volutpat mattis eros.
+						{!userResult.bio ? "This profile has no bio" : userResult.bio}
 					</div>
 					<div className={"user__info " + "bg-" + theme + "-mode"}>
 						<div className="user__info__col">

@@ -19,6 +19,7 @@ function SearchUser() {
 
 	useEffect(() => {
 		getUserData({ userToFind }).then((result) => {
+			console.log(result)
 			if (result.message) return setError("No results")
 			else return setUserResult(result)
 		})
@@ -31,7 +32,7 @@ function SearchUser() {
 				onSubmit={handleClick}
 			>
 				<div className="search__container">
-					<img src={IconSearch} className="search--icon" />
+					<img src={IconSearch} className="search--icon" alt="search icon" />
 					<input
 						name="input"
 						autoComplete="off"
