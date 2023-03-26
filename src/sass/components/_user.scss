@@ -1,9 +1,16 @@
 .user {
+	position: relative;
 	padding-top: 32px;
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-bottom: 24px;
 	border-radius: 15px;
+
+	@media screen and (min-width: 768px) {
+		.user__container {
+			margin-left: 202px;
+		}
+	}
 
 	.user__header {
 		display: flex;
@@ -12,12 +19,18 @@
 		.user__header--avatar {
 			height: 70px;
 			width: 70px;
-			border-radius: 100%;
+			border-radius: 9999px;
 			margin-right: 19px;
 
 			@media screen and (min-width: 600px) {
 				height: 117px;
 				width: 117px;
+			}
+
+			@media screen and (min-width: 768px) {
+				position: absolute;
+				left: 48px;
+				top: 48px;
 			}
 		}
 
@@ -104,15 +117,22 @@
 			grid-template-columns: 1fr 7fr;
 			margin-bottom: 17px;
 			overflow: hidden;
-			.user__links--icon {
-				color: white;
-			}
-			.user--link {
+			.user--link,
+			.user--link--nounderline,
+			.user--link--noavailable {
 				font-size: 13px;
-				text-decoration-line: none;
 				@media screen and (min-width: 600px) {
 					font-size: 15px;
 				}
+			}
+			.user--link--noavailable {
+				color: #8e94a3;
+			}
+			.user--link {
+				text-decoration-line: none;
+			}
+			.user--link:hover {
+				text-decoration-line: underline;
 			}
 		}
 		@media screen and (min-width: 600px) {

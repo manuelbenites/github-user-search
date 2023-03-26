@@ -1,5 +1,5 @@
-import IconMoon from "/assets/icon-moon.svg"
-import IconSun from "/assets/icon-sun.svg"
+import IconMoon from "./IconMoon.jsx"
+import IconSun from "./IconSun.jsx"
 import { useThemes } from "../context/ThemeContext.jsx"
 
 function Header() {
@@ -20,13 +20,9 @@ function Header() {
 				</div>
 				<div>
 					{theme == "light" ? (
-						<img
-							className="header__theme--icon"
-							src={IconMoon}
-							alt="moon icon"
-						/>
+						<IconMoon className="header__theme--moon--icon" />
 					) : (
-						<img className="header__theme--icon" src={IconSun} alt="sun icon" />
+						<IconSun className="header__theme--sun--icon" />
 					)}
 				</div>
 			</button>
