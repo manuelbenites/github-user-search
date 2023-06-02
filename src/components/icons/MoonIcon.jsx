@@ -1,4 +1,4 @@
-export default function IconMoon(props) {
+export default function MoonIcon(props) {
 	return (
 		<svg width="20" height="20" {...props}>
 			<path

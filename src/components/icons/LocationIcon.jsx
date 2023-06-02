@@ -1,4 +1,4 @@
-export default function IconLocation(props) {
+export default function LocationIcon(props) {
 	return (
 		<svg height="20" width="14" {...props}>
 			<path

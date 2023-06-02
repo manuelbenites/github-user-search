@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { getUserData } from "../services/getUserData.js"
 import { useThemes } from "../context/ThemeContext.jsx"
 
-import IconSearch from "/assets/icon-search.svg"
+import SearchIcon from "/assets/icon-search.svg"
 import User from "./User.jsx"
 
 function SearchUser() {
@@ -19,7 +19,6 @@ function SearchUser() {
 
 	useEffect(() => {
 		getUserData({ userToFind }).then((result) => {
-			console.log(result)
 			if (result.message) return setError("No results")
 			else return setUserResult(result)
 		})
@@ -28,15 +27,15 @@ function SearchUser() {
 	return (
 		<>
 			<form
-				className={"search " + "bg-component-" + theme + " bg-shadow-" + theme}
+				className={`search bg-component-${theme} bg-shadow-${theme}`}
 				onSubmit={handleClick}
 			>
 				<div className="search__container">
-					<img src={IconSearch} className="search--icon" alt="search icon" />
+					<img src={SearchIcon} className="search--icon" alt="search icon" />
 					<input
 						name="input"
 						autoComplete="off"
-						className={"search--input " + "text-" + theme}
+						className={`search--input text-${theme}`}
 						placeholder="Search GitHub username..."
 					/>
 				</div>

@@ -1,4 +1,4 @@
-export default function IconWebsite(props) {
+export default function WebsiteIcon(props) {
 	return (
 		<svg height="20" width="20" {...props}>
 			<g fill={props.fill}>

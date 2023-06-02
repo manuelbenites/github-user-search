@@ -1,4 +1,4 @@
-export default function IconSun(props) {
+export default function SunIcon(props) {
 	return (
 		<svg width="20" height="20" {...props}>
 			<g fill={props.fill} fillRule="nonzero">

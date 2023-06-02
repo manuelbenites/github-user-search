@@ -1,4 +1,4 @@
-export default function IconCompany(props) {
+export default function CompanyIcon(props) {
 	return (
 		<svg height="20" width="20" {...props}>
 			<g fill={props.fill}>

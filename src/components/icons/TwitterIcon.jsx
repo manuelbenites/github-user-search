@@ -1,4 +1,4 @@
-export default function IconTwitter(props) {
+export default function TwitterIcon(props) {
 	return (
 		<svg height="18" width="20" {...props}>
 			<path
